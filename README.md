@@ -1,5 +1,10 @@
 # EraserDiT: Fast Video Inpainting with Diffusion Transformer Model
 
+- 📄 **Paper available on [arXiv (2506.12853)](https://arxiv.org/abs/2506.12853)**
+- 🤖 **Model released on [Hugging Face — EraserDiT](https://huggingface.co/jieeliu/EraserDiT)**
+- 🌐 **Project page now live: [EraserDiT Demo](https://jieliu95.github.io/EraserDiT_demo/)**
+
+
 ## Install dependencies
 
 ```
