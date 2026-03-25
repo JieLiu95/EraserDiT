@@ -5,11 +5,7 @@
 ```
 pip install -r requirements.txt
 ```
-##
-Download weights and unzip 
-```
-unzip -d xx/EraserDiT weights.zip
-```
+
 ## Local demo
 Currently requires single gpu memory over 60GB.
 ```
