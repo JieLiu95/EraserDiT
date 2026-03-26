@@ -17,7 +17,7 @@ Currently requires single gpu memory over 60GB.
 python inference.py --vid_path data/10268234.mp4 --mask_path data/10268234_mask.mp4 --prompt "There is a bridge over the lake." 
 ```
 
-## Reference
+## Citation
 ```
 @article{liu2025eraserdit,
   title={EraserDiT: Fast Video Inpainting with Diffusion Transformer Model},
