@@ -11,6 +11,19 @@
 
 ---
 
+## 🗺️ Open-Source Roadmap
+
+### 🛠️ In Progress
+- [ ] Gradio demo (interactive interface)
+- [ ] Multi-GPU inference support
+
+### ✅ Completed
+- [x] Single-GPU inference
+- [x] Model weights release
+- [x] Paper publication
+
+---
+
 ## 🚀 Overview
 
 **EraserDiT** Interactively removes specified objects and automatically generates the corresponding prompts. It processes a 2K‑resolution video (2160×2100, 97 frames) in only 65 seconds on a single NVIDIA H800 GPU without any acceleration. Experiments show strong performance in content fidelity, texture restoration, and temporal consistency.
@@ -23,7 +36,7 @@
 pip install -r requirements.txt
 ```
 ---
-## Local demo
+## Inference
 EraserDiT requires >60GB GPU memory for 2K video object removal on a single card. 
 Multi‑GPU support is in progress and will be open‑sourced later.
 ```
