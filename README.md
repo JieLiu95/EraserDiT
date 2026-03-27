@@ -1,22 +1,35 @@
-# EraserDiT: Fast Video Inpainting with Diffusion Transformer Model
+<h1 align="center">
+  <span style="color:#2196f3;"><b>EraserDiT</b></span>: Fast Video Inpainting with Diffusion Transformer Model
+</h1>
 
-- 📄 **Paper available on [arXiv (2506.12853)](https://arxiv.org/abs/2506.12853)**
-- 🤖 **Model released on [Hugging Face — EraserDiT](https://huggingface.co/jieeliu/EraserDiT)**
-- 🌐 **Project page now live: [EraserDiT Demo](https://jieliu95.github.io/EraserDiT_demo/)**
+<p align="center">
+  <a href="https://huggingface.co/jieeliu/EraserDiT"><img alt="Huggingface Model" src="https://img.shields.io/badge/%F0%9F%A4%97%20Huggingface-Model-brightgreen"></a>
+  <a href="https://github.com/JieLiu95/EraserDiT"><img alt="Github" src="https://img.shields.io/badge/MiniMaxRemover-github-black"></a>
+  <a href="https://arxiv.org/abs/2506.12853"><img alt="arXiv" src="https://img.shields.io/badge/MiniMaxRemover-arXiv-b31b1b"></a>
+  <a href="https://jieliu95.github.io/EraserDiT_demo/"><img alt="Demo Page" src="https://img.shields.io/badge/Website-Demo%20Page-yellow"></a>
+</p>
+
+---
+
+## 🚀 Overview
+
+**EraserDiT** Interactively removes specified objects and automatically generates the corresponding prompts. It processes a 2K‑resolution video (2160×2100, 97 frames) in only 65 seconds on a single NVIDIA H800 GPU without any acceleration. Experiments show strong performance in content fidelity, texture restoration, and temporal consistency.
 
 
+---
 ## Install dependencies
 
 ```
 pip install -r requirements.txt
 ```
-
+---
 ## Local demo
-Currently requires single gpu memory over 60GB.
+EraserDiT requires >60GB GPU memory for 2K video object removal on a single card. 
+Multi‑GPU support is in progress and will be open‑sourced later.
 ```
 python inference.py --vid_path data/10268234.mp4 --mask_path data/10268234_mask.mp4 --prompt "There is a bridge over the lake." 
 ```
-
+---
 ## Citation
 ```
 @article{liu2025eraserdit,
