@@ -14,7 +14,7 @@
 ## 🗺️ Open-Source Roadmap
 
 ### 🛠️ In Progress
-- [ ] Gradio demo (interactive interface)
+- [ ] Gradio demo
 - [ ] Multi-GPU inference support
 
 ### ✅ Completed
