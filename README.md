@@ -37,7 +37,7 @@ pip install -r requirements.txt
 ```
 ---
 ## Inference
-EraserDiT requires >60GB GPU memory for 2K video object removal on a single card. 
+EraserDiT requires >60GB GPU memory for a 2K‑resolution video. 
 Multi‑GPU support is in progress and will be open‑sourced later.
 ```
 python inference.py --vid_path data/10268234.mp4 --mask_path data/10268234_mask.mp4 --prompt "There is a bridge over the lake." 
