@@ -30,20 +30,23 @@
 
 
 ---
-## Install dependencies
+## 🎯 Install dependencies
 
 ```
 pip install -r requirements.txt
 ```
 ---
-## Inference
+## 🧸 Inference
 EraserDiT requires >60GB GPU memory for a 2K‑resolution video. 
 Multi‑GPU support is in progress and will be open‑sourced later.
 ```
 python inference.py --vid_path data/10268234.mp4 --mask_path data/10268234_mask.mp4 --prompt "There is a bridge over the lake." 
 ```
 ---
-## Citation
+## 📜 Citation
+
+If you find our work helpful, please consider giving a star 🌟 and citation 📝
+
 ```
 @article{liu2025eraserdit,
   title={EraserDiT: Fast Video Inpainting with Diffusion Transformer Model},
