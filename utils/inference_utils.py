@@ -11,13 +11,13 @@ from models import LTXVideoTransformer3DModel
 
 
 @test_time(enable=GlobalValues.ENABLE_PER)
-def init(device, weight_dtype, pre_dir="/home/data04/liujie/Projects/EraserDiT-branch-095/EraseDiT/"):
+def init(device, weight_dtype, pre_dir="jieeliu/EraserDiT"):
     base_model_path = f"{pre_dir}"
     noise_scheduler = FlowMatchEulerDiscreteScheduler.from_pretrained(
             base_model_path, subfolder="scheduler")
     vae = AutoencoderKLLTXVideo.from_pretrained(base_model_path, subfolder="vae", use_safetensor=True)
 
-    text_encoder = T5EncoderModel.from_pretrained(base_model_path, subfolder="text_encoder", revision=False, variant=None,
+    text_encoder = T5EncoderModel.from_pretrained(base_model_path, subfolder="text_encoder", revision="main", variant=None,
                                                     torch_dtype=torch.bfloat16)
     tokenizer = T5Tokenizer.from_pretrained(base_model_path, subfolder="tokenizer")
     ltx_model = LTXVideoTransformer3DModel.from_pretrained(base_model_path, subfolder="transformer", use_safetensor=True)
